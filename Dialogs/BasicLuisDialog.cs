@@ -87,20 +87,20 @@ namespace Microsoft.Bot.Sample.LuisBot
     [Serializable]
     public class BasicLuisDialog : LuisDialog<object>
     {
-        //static string LUIS_appId = "b92365ca-9dec-474a-b700-49b0d5d421aa";
-   // static string LUIS_apiKey = "2a33432adef64b798e4e587a8a85070d";
+        //static string LUIS_appId = "My-Luis-app_ID";
+   // static string LUIS_apiKey = "LUIS-api-key";
     //static string LUIS_hostRegion = "westus.api.cognitive.microsoft.com";
 
     // QnA Maker global settings
     // assumes all KBs are created with same Azure service
-        static string qnamaker_endpointKey = "1f801f3f-39f6-4d75-aa58-9c69a191c7e8";
+        static string qnamaker_endpointKey = "My-qna-endpoint-key";
         static string qnamaker_endpointDomain = "myfaqbot";
     
         // QnA Maker Telegram Knowledge base
-        static string chitChat_kbID = "62b1ce1e-9d3f-4169-807f-825835861a46";
+        static string chitChat_kbID = "KB1-ID";
     
         // QnA Maker Azure - Bot Development Knowledge base
-        static string azure_kbID = "c5eb87fd-35db-4077-a8ca-8e800049b052";
+        static string azure_kbID = "KB2-ID";
     
         // Instantiate the knowledge bases
         public QnAMakerService chitChatQnAService = new QnAMakerService("https://" + qnamaker_endpointDomain + ".azurewebsites.net", chitChat_kbID, qnamaker_endpointKey);
